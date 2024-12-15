@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+{% load static %}
+<header>
+    <link rel="stylesheet" href="style.css"> 
+</header>
+<body>
+<h1>List of games</h1>
+<table border="1">
+    <tr>
+        <th>Title</th>
+        <th>Developer</th>
+    </tr>
+    <tr>
+        {% for i in  games %}
+        <td>{{i.title}}</td>
+        <td>{{i.Developer}}</td>
+        {%endfor%}
+    </tr>
+</table>
+
+</body>
+</html>
